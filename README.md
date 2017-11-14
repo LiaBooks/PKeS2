@@ -79,22 +79,30 @@ Das Ziel der Aufgabe ist es, die zuvor angesprochenen Komponenten zu nutzen, um 
 * [Arduinoview](https://github.com/fesselk/Arduinoview/blob/master/doc/Documetation.md)
 * [Datenblatt des AVR ATmega32U4](http://www.atmel.com/Images/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf)
 
-# Aufgabe 3
+# Aufgabe 2
+
+**Hinweis:**
+
+**Verwendet bei der Bearbeitung der Aufgabe keine Funktionen aus der Arduino-Bibliothek. Lediglich die Funktionen der `Serial`-Klasse zur Ansteuerung der seriellen Schnittstelle, sowie der Funktion `millis()` zur einfachen Zeitmessung können genutzt werden.**
+
 
 **Teilaufgaben**
 
+* *2.1* Implementiert die Aktivierung/Deaktivierung der Motoren und die zugehörigen Callback-Funktionen des Arduinoview-Interfaces
+* *2.2* Implementiert die Generierung eines PWM-Signals zur Geschwindigkeits Regelung beider Motoren.
 
-## Aufgabe 3.1
+## Aufgabe 2.1
+
+**Ziel:**
+
+**Teilschritte:**
+
+## Aufgabe 2.2
 
 **Ziel:**
 
 **Teilschritte:**
 
-## Aufgabe 3.2
-
-**Ziel:**
-
-**Teilschritte:**
 
 # Quizze
 
