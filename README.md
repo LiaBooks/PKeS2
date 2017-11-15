@@ -66,6 +66,7 @@ Neben den Hardware-Komponenten, ist auch die Theorie zur Ansteuerung der Motoren
 Wie immer findet ihr hier aber auch die spezifischen Datenblätter für die verbauten Komponenten. Dazu kommt in dieser Aufgabe das [Datenblatt des Motortreibers](http://www.st.com/content/ccc/resource/technical/document/datasheet/59/d0/ce/41/56/bb/4b/10/DM00034699.pdf/files/DM00034699.pdf/jcr:content/translations/en.DM00034699.pdf).
 
 **Elektromotoren:**
+
 * [Elektromotoren](https://en.wikipedia.org/wiki/Electric_motor)
 * [Gleichstrommotoren](https://en.wikipedia.org/wiki/DC_motor)
 * [H-Brücke/Vierquadrantensteller](https://de.wikipedia.org/wiki/Vierquadrantensteller)
@@ -77,15 +78,18 @@ Wie immer findet ihr hier aber auch die spezifischen Datenblätter für die verb
   -->
 
 **Pulsweitenmodulation:**
+
 * [Wikipedia](https://en.wikipedia.org/wiki/Pulse-width_modulation)
 * [Mikrocontroller.net](https://www.mikrocontroller.net/articles/Pulsweitenmodulation)
 * [Motoransteuerung mit PWM](https://www.mikrocontroller.net/articles/Motoransteuerung_mit_PWM)
 
 **Timer:**
+
 * [Tutorial](https://www.mikrocontroller.net/articles/AVR-Tutorial:_Timer)
 * [Unterschied zwischen Timer und Counter](https://www.tutorialspoint.com/embedded_systems/es_timer_counter.htm)
 
 **PKeS:**
+
 * [Datenblatt Motortreiber](http://www.st.com/content/ccc/resource/technical/document/datasheet/59/d0/ce/41/56/bb/4b/10/DM00034699.pdf/files/DM00034699.pdf/jcr:content/translations/en.DM00034699.pdf)
 * [Schaltbelegungsplan](https://github.com/liaScript/PKeS0/blob/master/materials/robubot_stud.pdf?raw=true)
 * [Arduinoview](https://github.com/fesselk/Arduinoview/blob/master/doc/Documetation.md)
@@ -114,6 +118,8 @@ In der zweiten Teilaufgabe wird es dann darum gehen, die eigentliche Bewegung zu
 
 * *2.1* Implementiert die Aktivierung/Deaktivierung der Motoren und die zugehörigen Callback-Funktionen des Arduinoview-Interfaces.
 * *2.2* Implementiert die Geschwindigkeits- und Drehrichtungssteuerung für beide Motoren.
+
+Die Aufgabe ist bis zu der Woche vom **27.11.-01.12.2017** vorzubereiten.
 
 ## Aufgabe 2.1
 
