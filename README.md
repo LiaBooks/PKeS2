@@ -192,7 +192,7 @@ Wie auch in der letzten Aufgabe haben wir noch ein paar kurze Fragen an euch.
 
 ## Pulsweitenmodulation
 
-**Welche Arten der Pulsweitenmodulation können unterschieden werden?**
+**Welch Modi der genannten Pulsweitenmodulation unterstützt der verwendeten Mikrocontroller?**
 
   [[X]] Fast PWM
   [[ ]] Detailed PWM
@@ -220,6 +220,20 @@ Weitere Informationen zum *Duty Cycle* könnt ihr [hier](https://en.wikipedia.or
   [[[
 
 Weitere Informationen zum *Duty Cycle* könnt ihr [hier](https://en.wikipedia.org/wiki/Duty_cycle) finden.
+
+]]]
+
+**Mit welchen *Stellschrauben* kann die Frequenz des PWM-Signals im angepasst werden?**
+
+  [[X]] Taktquelle für den Timer
+  [[X]] Prescalerkonfiguration
+  [[ ]] aktueller Wert des Vergleichsregisters
+  [[ ]] Konfiguration der COMnAm-Flags
+  [[X]] gewählter Timer
+  
+  [[[
+
+ Selbstverständlich beeinflusst die Duty-Cycle Konfiguration und die Orientierung der Ausgabe (invertiert/nicht-invertiert) die Frequenz des PWM Signales NICHT!
 
 ]]]
 
@@ -251,21 +265,18 @@ Bei dem Timer/Counter0 handelt es sich um einen 10-Bit Timer. Daher ist der maxi
 
 ]]]
 
-**Welchen maximalen Wert kann der Timer/Counter4 des AVR ATmega32U4 annehmen?**
+**Welches Verhalten zeigt ein Timerbaustein im CTC-Mode?**
 
-
-    [(X)] 1023
-    [( )] 65535
-    [( )] 512
-    [( )] 255
+    [(X)] Rücksprung des Counters beim Erreichen des Vergleichswertes auf 0
+    [( )] Vergleichswertunabhängige Frequenz bei den Ausgaben auf den zugerhörigen PINs
+    [( )] Auf- und Abzählen des Counters
+    
     [[[
 
-Bei dem Timer/Counter0 handelt es sich um einen 16-Bit Timer. Daher ist der maximale Wert durch `2^8-1` gegeben.
+Clear-to-Compare bezeichnet einen Timermode, bei dem der Counter jeweils nach dem Erreichen des Vergleichswertes resetet wird. Verallgemeinert kann gesagt werden, dass der *Wecker* neu aufgezogen wird.
 
 ]]]
 
-
-  
   
 ## Motortreiber
 
@@ -275,21 +286,37 @@ Bei dem Timer/Counter0 handelt es sich um einen 16-Bit Timer. Daher ist der maxi
   [[X]] Vierquadrantensteller
   [[X]] Vollbrücke
   
- 
-**Wie wird eine Halbbrücke noch genannt?**
 
-  [( )] Es gibt keine Halbbrücke
-  [(X)] Zweiquadrantensteller
-  [( )] ???
-  
 **Welche Arten des Bremsens können über eine Vollbrücke realisiert werden?**
-
 
   [[ ]] Stillstand, die Magnetfelder im Motor werden nicht gewechselt, die Spulen richten sich entlang dem Magnetfeld aus.
   [[X]] Leerlauf, der Motor wird durch sonstige Energieverluste langsamer.
   [[X]] Gegenschub, die Drehrichtung des Motors wird gewechselt.
   [[X]] Kurzschluss, der Motor induziert eine seiner eigenen Bewegung entgegenstehende Spannung.
   
+**In der konkreten Anwendung wurde ein STM L6206 Motortreiber [Link](http://www.st.com/content/ccc/resource/technical/document/datasheet/59/d0/ce/41/56/bb/4b/10/DM00034699.pdf/files/DM00034699.pdf/jcr:content/translations/en.DM00034699.pdf) integriert. Welche Aufgabe haben die mit "Sense" bezeichneten Eingänge?**
+
+  [[ ]] Messung der internen Temperatur im Treiberbaustein
+  [[ ]] Messung der Spannung an den Motoren
+  [[X]] Messung des Stromflusses durch die Motoren
+  [[ ]] Messung der Drehgeschwindigkeit des Motors
+  
+    [[[
+    
+Die Sense-Eingänge können mit einem niederohmigen Shunt-Widerstand benutzt werden, um den Stromfluß durch den Motor zu erfassen. 
+
+]]]  
+
+**Mit den PROGCLA und PROGCLB sind jeweils mit einem 10kOhm Widerstand gegen GND verbunden. Damit kann die maximale Stromstärke definiert werden, die der Treiber liefert, bevor er sich abschaltet. Ermitteln Sie aus dem Datenblatt den mit dem Widerstand spezifizierten Wert.**
 
 
+  [[X]] 2 bis 2.5 A
+  [[ ]] 3 und 3.5 A
+  [[ ]] 4 und 4.5 A
+
+    [[[
+    
+Das Kapitel 4.3 beschreibt unter dem Stichwort "Non-dissipative overcurrent detection and protection" die Wirkung und den Hintergrund des Überstromschutzes des Treibers. Die Formel I charakterisiert das Verhalten für R = 0 und Formel II für eine beliebigen Widerstandswert. Figure 11 fasst diese Aussage grafisch und erlaubt es für 10kOhm den zugehörigen Wert zu ermitteln.
+
+]]]
 
