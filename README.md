@@ -203,7 +203,7 @@ Wie auch in der letzten Aufgabe haben wir noch ein paar kurze Fragen an euch.
   
 **Was wird durch *Duty Cycle* angegeben?**
 
- 
+
   [(X)] Der Anteil eines Intervalls, in dem das PWM-Signal einen High-Pegel hat
   [( )] Der Anteil eines Intervalls, in dem das PWM-Signal einen Low-Pegel hat
   [( )] Der Anteil eines Intervalls, in dem das PWM-Signal keiner Vorgabe folgt
@@ -234,10 +234,9 @@ Weitere Informationen zum *Duty Cycle* könnt ihr [hier](https://en.wikipedia.or
   [[ ]] aktueller Wert des Vergleichsregisters
   [[ ]] Konfiguration der COMnAm-Flags
   [[X]] gewählter Timer
-  
   [[[
 
- Selbstverständlich beeinflusst die Duty-Cycle Konfiguration und die Orientierung der Ausgabe (invertiert/nicht-invertiert) die Frequenz des PWM Signales NICHT!
+Selbstverständlich beeinflusst die Duty-Cycle Konfiguration und die Orientierung der Ausgabe (invertiert/nicht-invertiert) die Frequenz des PWM Signales NICHT!
 
 ]]]
 
@@ -274,7 +273,6 @@ Bei dem Timer/Counter0 handelt es sich um einen 10-Bit Timer. Daher ist der maxi
     [(X)] Rücksprung des Counters beim Erreichen des Vergleichswertes auf 0
     [( )] Vergleichswertunabhängige Frequenz bei den Ausgaben auf den zugerhörigen PINs
     [( )] Auf- und Abzählen des Counters
-    
     [[[
 
 Clear-to-Compare bezeichnet einen Timermode, bei dem der Counter jeweils nach dem Erreichen des Vergleichswertes resetet wird. Verallgemeinert kann gesagt werden, dass der *Wecker* neu aufgezogen wird.
@@ -298,18 +296,17 @@ Clear-to-Compare bezeichnet einen Timermode, bei dem der Counter jeweils nach de
   [[X]] Gegenschub, die Drehrichtung des Motors wird gewechselt.
   [[X]] Kurzschluss, der Motor induziert eine seiner eigenen Bewegung entgegenstehende Spannung.
   
-**In der konkreten Anwendung wurde ein STM L6206 Motortreiber [Link](http://www.st.com/content/ccc/resource/technical/document/datasheet/59/d0/ce/41/56/bb/4b/10/DM00034699.pdf/files/DM00034699.pdf/jcr:content/translations/en.DM00034699.pdf) integriert. Welche Aufgabe haben die mit "Sense" bezeichneten Eingänge?**
+**In der konkreten Anwendung wurde ein [STM L6206 Motortreiber](http://www.st.com/content/ccc/resource/technical/document/datasheet/59/d0/ce/41/56/bb/4b/10/DM00034699.pdf/files/DM00034699.pdf/jcr:content/translations/en.DM00034699.pdf) integriert. Welche Aufgabe haben die mit "Sense" bezeichneten Eingänge?**
 
   [[ ]] Messung der internen Temperatur im Treiberbaustein
   [[ ]] Messung der Spannung an den Motoren
   [[X]] Messung des Stromflusses durch die Motoren
   [[ ]] Messung der Drehgeschwindigkeit des Motors
-  
-    [[[
+  [[[
     
 Die Sense-Eingänge können mit einem niederohmigen Shunt-Widerstand benutzt werden, um den Stromfluß durch den Motor zu erfassen. 
 
-]]]  
+]]]
 
 **Mit den PROGCLA und PROGCLB sind jeweils mit einem 10kOhm Widerstand gegen GND verbunden. Damit kann die maximale Stromstärke definiert werden, die der Treiber liefert, bevor er sich abschaltet. Ermitteln Sie aus dem Datenblatt den mit dem Widerstand spezifizierten Wert.**
 
@@ -317,9 +314,8 @@ Die Sense-Eingänge können mit einem niederohmigen Shunt-Widerstand benutzt wer
   [[X]] 2 bis 2.5 A
   [[ ]] 3 und 3.5 A
   [[ ]] 4 und 4.5 A
-
-    [[[
-    
+  [[[
+  
 Das Kapitel 4.3 beschreibt unter dem Stichwort "Non-dissipative overcurrent detection and protection" die Wirkung und den Hintergrund des Überstromschutzes des Treibers. Die Formel I charakterisiert das Verhalten für R = 0 und Formel II für eine beliebigen Widerstandswert. Figure 11 fasst diese Aussage grafisch und erlaubt es für 10kOhm den zugehörigen Wert zu ermitteln.
 
 ]]]
