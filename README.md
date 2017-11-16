@@ -194,6 +194,7 @@ Wie auch in der letzten Aufgabe haben wir noch ein paar kurze Fragen an euch.
 
 **Welch Modi der genannten Pulsweitenmodulation unterstützt der verwendeten Mikrocontroller?**
 
+
   [[X]] Fast PWM
   [[ ]] Detailed PWM
   [[X]] Phase Correct PWM
@@ -202,6 +203,7 @@ Wie auch in der letzten Aufgabe haben wir noch ein paar kurze Fragen an euch.
   
 **Was wird durch *Duty Cycle* angegeben?**
 
+ 
   [(X)] Der Anteil eines Intervalls, in dem das PWM-Signal einen High-Pegel hat
   [( )] Der Anteil eines Intervalls, in dem das PWM-Signal einen Low-Pegel hat
   [( )] Der Anteil eines Intervalls, in dem das PWM-Signal keiner Vorgabe folgt
@@ -212,6 +214,7 @@ Weitere Informationen zum *Duty Cycle* könnt ihr [hier](https://en.wikipedia.or
 ]]]
 
 **Welche Einheit hat *Duty Cycle*?**
+
 
   [( )] ms
   [( )] ns
@@ -224,6 +227,7 @@ Weitere Informationen zum *Duty Cycle* könnt ihr [hier](https://en.wikipedia.or
 ]]]
 
 **Mit welchen *Stellschrauben* kann die Frequenz des PWM-Signals im angepasst werden?**
+
 
   [[X]] Taktquelle für den Timer
   [[X]] Prescalerkonfiguration
