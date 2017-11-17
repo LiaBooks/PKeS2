@@ -31,7 +31,7 @@ Die Ansteuerung von Motoren umfasst zwei Eigenschaften, die Drehrichtung sowie d
 PWM-Signale werden oftmals durch [Timer/Counter](https://www.tutorialspoint.com/embedded_systems/es_timer_counter.htm) generiert. Die Konfiguration und Programmierung dieser bildet daher ein weiteres Thema dieser Aufgabe.
 
 --{{3}}--
-Letztlich kann ein Motor aufgrund der auftretenden Ströme nicht direkt an die Ausgänge eines Mikrocontrollers angeschlossen werden. Stattdessen wird ein Motortreiber benötigt. Über diesen kann sowohl eine Geschwindigkeitsregelung, sowie eine Richtungssteuerung der Motoren stattfinden.
+Letztlich kann ein Motor aufgrund der auftretenden Ströme nicht direkt an die Ausgänge eines Mikrocontrollers angeschlossen werden. Stattdessen wird ein Motortreiber benötigt. Über diesen kann sowohl eine Geschwindigkeits-, sowie eine Richtungssteuerung der Motoren stattfinden.
 
 --{{4}}--
 Das Ziel der Aufgabe ist es, die zuvor angesprochenen Komponenten zu nutzen, um eine Motoransteuerung für die beiden Motoren unserer Roboterplattform zu implementieren. Dazu müsst ihr entsprechend einer vorgegebenen Geschwindigkeit und Bewegungsrichtung PWM-Signale für beide Motoren generieren und sie an die Motoren weiterleiten.
@@ -154,7 +154,7 @@ Im zweiten Teilschritt geht es darum, die Motoren zu bewegen. Dazu haben wir euc
 Zur Abnahme der Aufgabe sollen positive Werte von *left* und *right* zu einer Vorwärtsbewegung, negative Werte zu einer Rückwärtsbewegung des jeweiligen Motors/Rads führen (zur Orientierung: die 7-Segment-Anzeigen sind links, an der Vorderseite des Roboters sind die Infrarot-Sensoren angebracht). 
 
 --{{6}}--
-Zur Vorgabe von Geschwindigkeits- und Richtungswerten für beide Räder, haben wir eurem Arduinoview-Interface ein *Joystick* hinzugefügt. Durch Klicken und Ziehen des Cursors im Blauen Quadrat könnt ihr die Vorgaben kontinuierlich ändern.
+Zur Vorgabe von Geschwindigkeits- und Richtungswerten für beide Räder, haben wir eurem Arduinoview-Interface ein *Joystick* hinzugefügt. Durch Klicken und Ziehen des Cursors im blauen Quadrat könnt ihr die Vorgaben kontinuierlich ändern.
 
 
 **Ziel:**
@@ -173,7 +173,7 @@ Ansteuerung beider Motoren mittels PWM-Signale und Drehrichtungsvorgabe.
 ## Bonusaufgabe B.1
 
 --{{1}}--
-Da unsere Funktionalität zur Ansteuerung der Motoren lediglich auf Interrupts basiert und nur das Arduinoview-Interface auf den regulären Programmablauf zurückgreift, ist die CPU nur bei Änderungen der Geschwindigkeit oder der Drehrichtung beteiligt. Können wir diesen Umstand nutzen, um den Energieverbrauch unseres Systems weiter zu minimieren?
+Da unsere Funktionalität zur Ansteuerung der Motoren lediglich auf Timern/Counter basiert und nur das Arduinoview-Interface auf den regulären Programmablauf zurückgreift, ist die CPU nur bei Änderungen der Geschwindigkeit oder der Drehrichtung beteiligt. Können wir diesen Umstand nutzen, um den Energieverbrauch unseres Systems weiter zu minimieren?
 
 --{{2}}--
 Als Bonusaufgabe könnt ihr die verschiedenen Schlafmodi des AVR ATmega32U4 studieren. In welchem Modus wird Energie gespart ohne die zuvor implementierte Funktionalität zu limitieren?
@@ -192,7 +192,7 @@ Wie auch in der letzten Aufgabe haben wir noch ein paar kurze Fragen an euch.
 
 ## Pulsweitenmodulation
 
-**Welch Modi der genannten Pulsweitenmodulation unterstützt der verwendeten Mikrocontroller?**
+**Welche Modi der genannten Pulsweitenmodulation unterstützt der verwendeten Mikrocontroller?**
 
 
   [[X]] Fast PWM
@@ -226,7 +226,7 @@ Weitere Informationen zum *Duty Cycle* könnt ihr [hier](https://en.wikipedia.or
 
 ]]]
 
-**Mit welchen *Stellschrauben* kann die Frequenz des PWM-Signals im angepasst werden?**
+**Mit welchen *Stellschrauben* kann die Frequenz des PWM-Signals angepasst werden?**
 
 
   [[X]] Taktquelle für den Timer
@@ -251,7 +251,7 @@ Selbstverständlich beeinflusst die Duty-Cycle Konfiguration und die Orientierun
     [(X)] 255
     [[[
     
-Bei dem Timer/Counter0 handelt es sich um einen 8-Bit Timer. Daher ist der maximale Wert durch `2^8-1` gegeben.
+Bei dem Timer/Counter0 handelt es sich um einen 8-Bit Timer. Daher ist der maximale Wert durch $2^8-1$ gegeben.
 
 ]]]
 
@@ -264,7 +264,7 @@ Bei dem Timer/Counter0 handelt es sich um einen 8-Bit Timer. Daher ist der maxim
     [( )] 255
     [[[
 
-Bei dem Timer/Counter0 handelt es sich um einen 10-Bit Timer. Daher ist der maximale Wert durch `2^8-1` gegeben.
+Bei dem Timer/Counter1 handelt es sich um einen 16-Bit Timer. Daher ist der maximale Wert durch $2^16-1$ gegeben.
 
 ]]]
 
@@ -289,7 +289,7 @@ Clear-to-Compare bezeichnet einen Timermode, bei dem der Counter jeweils nach de
   [[X]] Vollbrücke
   
 
-**Welche Arten des Bremsens können über eine Vollbrücke realisiert werden?**
+**Welche Arten des Bremsens können über eine H-Brücke realisiert werden?**
 
   [[ ]] Stillstand, die Magnetfelder im Motor werden nicht gewechselt, die Spulen richten sich entlang dem Magnetfeld aus.
   [[X]] Leerlauf, der Motor wird durch sonstige Energieverluste langsamer.
