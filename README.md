@@ -294,7 +294,7 @@ Clear-to-Compare bezeichnet einen Timermode, bei dem der Counter jeweils nach de
   [[ ]] Stillstand, die Magnetfelder im Motor werden nicht gewechselt, die Spulen richten sich entlang dem Magnetfeld aus.
   [[X]] Leerlauf, der Motor wird durch sonstige Energieverluste langsamer.
   [[X]] Gegenschub, die Drehrichtung des Motors wird gewechselt.
-  [[X]] Kurzschluss, der Motor induziert eine seiner eigenen Bewegung entgegenstehende Spannung.
+  [[X]] Generatorbetrieb, der Motor wandelt die Bewegungsenergie in elektrische Energie um.
   
 **In der konkreten Anwendung wurde ein [STM L6206 Motortreiber](http://www.st.com/content/ccc/resource/technical/document/datasheet/59/d0/ce/41/56/bb/4b/10/DM00034699.pdf/files/DM00034699.pdf/jcr:content/translations/en.DM00034699.pdf) integriert. Welche Aufgabe haben die mit "Sense" bezeichneten Eingänge?**
 
