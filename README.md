@@ -17,7 +17,7 @@ narrator:  Deutsch Female
 Willkommen zurück im eLearning-System *eLab*.
 
 --{{1}}--
-Die Grundlagen der Treiberentwicklung für eingebettete System, die in der letzten Aufgabe thematisiert wurden, sollen in dieser Aufgabe genutzt werden, um einen weiteren Aktortyp auf unserer Plattform anzusteuern: die Motoren.
+Die Grundlagen der Treiberentwicklung für eingebettete Systeme, die in der letzten Aufgabe thematisiert wurden, sollen in dieser Aufgabe genutzt werden, um einen weiteren Aktortyp auf unserer Plattform anzusteuern: die Motoren.
 
 --{{2}}--
 Das Ziel dieser Aufgabe wird es sein, die Ansteuerung beider Motoren zu implementieren. Wenn ihr die Aufgabe abgeschlossen habt, sollte es möglich sein, beide Motoren unabhängig voneinander vorwärts und rückwärts, sowie in unterschiedlichen Geschwindigkeiten, bewegen zu lassen.
