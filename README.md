@@ -25,7 +25,7 @@ Das Ziel dieser Aufgabe wird es sein, die Ansteuerung beider Motoren zu implemen
 ## Themen und Ziele
 
 --{{1}}--
-Die Ansteuerung von Motoren umfasst zwei Eigenschaften, die Drehrichtung sowie die Drehgeschwindigkeit. Vor allem die Drehgeschwindigkeit wird durch die Generierung eines entsprechenden PWM-signals [(PWM = Pulsweitenmodulation)](https://en.wikipedia.org/wiki/Pulse-width_modulation) beeinflusst. Daher wird dieses ein Kernthema dieser Aufgabe sein.
+Die Ansteuerung von Motoren umfasst zwei Eigenschaften: die Drehrichtung sowie die Drehgeschwindigkeit. Vor allem die Drehgeschwindigkeit wird durch die Generierung eines entsprechenden PWM-signals [(PWM = Pulsweitenmodulation)](https://en.wikipedia.org/wiki/Pulse-width_modulation) beeinflusst. Daher wird dieses ein Kernthema dieser Aufgabe sein.
 
 --{{2}}--
 PWM-Signale werden oftmals durch [Timer/Counter](https://www.tutorialspoint.com/embedded_systems/es_timer_counter.htm) generiert. Die Konfiguration und Programmierung dieser bildet daher ein weiteres Thema dieser Aufgabe.
@@ -124,18 +124,18 @@ Die Aufgabe ist bis zu der Woche vom **27.11.-01.12.2017** vorzubereiten.
 ## Aufgabe 2.1
 
 --{{1}}--
-Wie bereits angedeutet, muss zur Bearbeitung dieser Aufgabe zunächst sichergestellt werden, dass ihr die Motoren jederzeit stoppen könnt. Aus diesem Grund ist eure Code-Vorlage bei dieser Aufgabe nicht kompilierfähig - ihr müsst zunächst die Funktion `deactivateMotors` implementieren.
+Wie bereits angedeutet, muss zur Bearbeitung dieser Aufgabe zunächst sichergestellt werden, dass ihr die Motoren jederzeit stoppen könnt. Aus diesem Grund ist eure Code-Vorlage bei dieser Aufgabe nicht kompilierfähig - ihr müsst zunächst die Funktion `deactivateMotors()` implementieren.
 
 --{{2}}--
-Nachdem ihr die Deaktivierung der Motoren mit der entsprechenden Callback-Funktion verknüpft habt, gilt es im zweiten Teilschritt das Gegenstück zu implementieren. Fügt dazu eurem Arduinoview-Interface einen *Start*-Button hinzu und verknüpft die Callback-Funktion mit der API-Funktion `activateMotors`.
+Nachdem ihr die Deaktivierung der Motoren mit der entsprechenden Callback-Funktion verknüpft habt, gilt es im zweiten Teilschritt das Gegenstück zu implementieren. Fügt dazu eurem Arduinoview-Interface einen *Start*-Button hinzu und verknüpft die Callback-Funktion mit der API-Funktion `activateMotors()`.
 
 **Ziel:**
-Implementiert die Funktionen `deactivateMotors` und `activateMotors` und verknüpft sie mit den entsprechenden Callback-Funktionen im Arduinoview-Interface.
+Implementiert die Funktionen `deactivateMotors()` und `activateMotors()` und verknüpft sie mit den entsprechenden Callback-Funktionen im Arduinoview-Interface.
 
 **Teilschritte:**
 
 1. Legt eine *Motor.cpp*-Datei an und implementiert die Funktion `deactivateMotors()`. Danach sollte eure Code-Vorlage kompilierfähig sein.
-2. Implementiert die Funktion `activateMotors`.
+2. Implementiert die Funktion `activateMotors()`.
 3. Fügt dem Arduinoview-Interface einen *Start*-Button hinzu und verknüpft ihn mit der Funktion `activateMotors()`.
 
 
