@@ -170,6 +170,12 @@ Ansteuerung beider Motoren mittels PWM-Signale und Drehrichtungsvorgabe.
 1. Implementiert die Funktion `initMotors()`. Achtet darauf, dass die sich für das PWM-Signal ergebende Frequenz außerhalb des hörbaren Bereichs (500 Hz - 15 kHz) liegt.
 2. Implementiert die Funktion `setMotors(int8_t left, int8_t right)`. 
 
+**Hinweis Browserunterschiede:**
+
+Der Mozilla Firefox und Chrome verhalten sich leider bei der Auswertung der Clickevents unterschiedlich des Steuerungs Sticks. Der große HTML Block sollte daher um die folgende Zeile vor dem SVG-Element eränzt werden.
+
+`"<style>svg * { pointer-events: none; }</style>\n"`
+
 ## Bonusaufgabe B.1
 
 --{{1}}--
