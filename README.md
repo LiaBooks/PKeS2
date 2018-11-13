@@ -1124,4 +1124,28 @@ erlaubt es für 10kOhm den zugehörigen Wert zu ermitteln.
 
 # Umfrage
 
-Todo
+Inwieweit stimmen Sie folgenden Aussagen zu dieser Übung zu ( von 1 für
+"_stimme gar nicht zu_" bis 5 für "_stimme voll zu_"):
+
+    [(1)(2)(3)(4)(5)]
+    [ ] Inhaltlich war die Aufgabe sehr schwierig.
+    [ ] Die Aufgabenstellung und die Erklärungen waren schwer verständlich formuliert.
+    [ ] Die Aufgabe hat dazu beigetragen, dass ich die Inhalte, die in der Vorlesung behandelt wurden, besser verstanden habe.
+    [ ] Bei der Bearbeitung der Aufgabe habe ich sehr viel kognitive Anstrengung investiert.
+
+---
+
+Die Bearbeitung der Aufgabe in dieser Übung ...
+( von 1 für "_stimme gar nicht zu_" bis 5 für "_stimme voll zu_")
+
+    [(1)(2)(3)(4)(5)]
+    [ ] ... war interessant.
+    [ ] ... hat mir Spaß gemacht.
+
+---
+
+Um die Aufgabe bearbeiten zu können ...
+( von 1 für "_stimme gar nicht zu_" bis 5 für "_stimme voll zu_")
+
+    [(1)(2)(3)(4)(5)]
+    [ ] ... benötigte ich Unterstützung durch Kommilitonen
