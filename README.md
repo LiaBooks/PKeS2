@@ -487,6 +487,8 @@ window.addEventListener("beforeunload", function (event) {
 
 # Einführung
 
+@init_clear
+
 Willkommen zurück im eLearning-System *eLab*.
 
     --{{0}}--
@@ -504,6 +506,8 @@ unterschiedlichen Geschwindigkeiten, bewegen zu lassen.
 
 
 ## Themen und Ziele
+
+@init_clear
 
     --{{0}}--
 Die Ansteuerung von Motoren umfasst zwei Eigenschaften: die Drehrichtung sowie
@@ -546,6 +550,8 @@ Motoren weiterleiten.
 
 
 ## Weitere Informationen
+
+@init_clear
 
     --{{0}}--
 Da sich diese Aufgabe mit der Ansteuerung von Elektromotoren beschäftigt, kann
@@ -599,6 +605,8 @@ verbauten Komponenten. Dazu kommt in dieser Aufgabe das
 
 # Aufgabe 2
 
+@init_clear
+
     --{{0}}--
 In der *zweiten* praktischen Aufgabe sollt ihr die Ansteuerung der Motoren
 unserer Roboter-Plattform implementieren. Da es sich auch hier um eine einfache
@@ -638,6 +646,8 @@ generieren.
 
 ## Aufgabe 2.1
 
+@init_clear
+
     --{{0}}--
 Wie bereits angedeutet, muss zur Bearbeitung dieser Aufgabe zunächst
 sichergestellt werden, dass ihr die Motoren jederzeit stoppen könnt. Aus diesem
@@ -667,6 +677,8 @@ Arduinoview-Interface.
 
 
 ## Aufgabe 2.2
+
+@init_clear
 
     --{{0}}--
 Nachdem wir nun die Motoren aktivieren und vor allem **deaktivieren** können,
@@ -724,6 +736,8 @@ daher um die folgende Zeile vor dem SVG-Element eränzt werden.
 `"<style>svg * { pointer-events: none; }</style>\n"`
 
 ## Bonusaufgabe B.1
+
+@init_clear
 
     --{{0}}--
 Da unsere Funktionalität zur Ansteuerung der Motoren lediglich auf
@@ -919,10 +933,14 @@ void activateMotors();
 
 # Quizze
 
+@init_clear
+
     --{{0}}--
 Wie auch in der letzten Aufgabe haben wir noch ein paar kurze Fragen an euch.
 
 ## Pulsweitenmodulation
+
+@init_clear
 
     --{{0}}--
 Welche Modi der genannten Pulsweitenmodulation unterstützt der verwendete
@@ -949,7 +967,6 @@ Weitere Informationen zum *Duty Cycle* könnt ihr [hier](https://en.wikipedia.or
 
 ********************************************************************************
 
-
     --{{2}}--
 Welche Einheit hat *Duty Cycle*?
 
@@ -963,7 +980,6 @@ Welche Einheit hat *Duty Cycle*?
 Weitere Informationen zum *Duty Cycle* könnt ihr [hier](https://en.wikipedia.org/wiki/Duty_cycle) finden.
 
 ********************************************************************************
-
 
     --{{3}}--
 Mit welchen *Stellschrauben* kann die Frequenz des PWM-Signals angepasst werden?
@@ -983,6 +999,8 @@ der Ausgabe (invertiert/nicht-invertiert) die Frequenz des PWM Signales NICHT!
 
 ## Timer
 
+@init_clear
+
     --{{0}}--
 Welchen maximalen Wert kann der Timer/Counter0 des AVR ATmega32U4 annehmen?
 
@@ -998,7 +1016,6 @@ maximale Wert durch $2^8-1$ gegeben.
 
 ********************************************************************************
 
-
     --{{1}}--
 Welchen maximalen Wert kann der Timer/Counter1 des AVR ATmega32U4 annehmen?
 
@@ -1013,7 +1030,6 @@ Bei dem Timer/Counter1 handelt es sich um einen 16-Bit Timer. Daher ist der
 maximale Wert durch $2^16-1$ gegeben.
 
 ********************************************************************************
-
 
     --{{2}}--
 Welches Verhalten zeigt ein Timerbaustein im CTC-Modus?
@@ -1032,6 +1048,8 @@ werden, dass der *Wecker* neu aufgezogen wird.
 
 
 ## Motortreiber
+
+@init_clear
 
     --{{0}}--
 Wie wird eine H-Brücke noch genannt?
