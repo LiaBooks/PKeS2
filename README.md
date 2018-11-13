@@ -496,13 +496,14 @@ Die Grundlagen der Treiberentwicklung für eingebettete Systeme, die in der
 letzten Aufgabe thematisiert wurden, sollen in dieser Aufgabe genutzt werden, um
 einen weiteren Aktortyp auf unserer Plattform anzusteuern: die Motoren.
 
-
-
     --{{1}}--
 Das Ziel dieser Aufgabe wird es sein, die Ansteuerung beider Motoren zu
 implementieren. Wenn ihr die Aufgabe abgeschlossen habt, sollte es möglich sein,
 beide Motoren unabhängig voneinander vorwärts und rückwärts, sowie in
 unterschiedlichen Geschwindigkeiten, bewegen zu lassen.
+
+    {{1}}
+![Motor](pics/motor.jpg)<!--style="width: 100%"-->
 
 
 ## Themen und Ziele
@@ -537,9 +538,13 @@ Motoren weiterleiten.
 
 **Themen:**
 
-* Pulsweitenmodulation
-* Timer/Counter
-* Motoransteuerung und Motortreiber
+* {{0}} Pulsweitenmodulation
+* {{1}} Timer/Counter
+* {{2}} Motoransteuerung und Motortreiber
+
+
+                                    {{3}}
+********************************************************************************
 
 **Ziel(e):**
 
@@ -548,30 +553,18 @@ Motoren weiterleiten.
   * Vorwärts- sowie Rückwärtsbewegung
   * Einstellbare Geschwindigkeiten
 
+********************************************************************************
 
 ## Weitere Informationen
 
 @init_clear
 
-    --{{0}}--
+                             --{{0}}--
 Da sich diese Aufgabe mit der Ansteuerung von Elektromotoren beschäftigt, kann
 es hilfreich sein, sich zunächst über deren Aufbau und ihre verschiedenen
-Varianten zu informieren.
-
-    --{{1}}--
-Direkt relevant für die Ansteuerung sind vor allem H-Brücken, bzw.
-Vierquadrantensteller. Diese elektrischen Schaltungen erlauben die
-Drehrichtungsänderung und die Geschwindigkeitssteuerung der Motoren.
-
-    --{{2}}--
-Neben den Hardware-Komponenten, ist auch die Theorie zur Ansteuerung der Motoren
-von Bedeutung. Zentral ist hier die Pulsweitenmodulation, sowie ihre Generierung
-mit Hilfe von Timern/Countern.
-
-    --{{3}}--
-Wie immer findet ihr hier aber auch die spezifischen Datenblätter für die
-verbauten Komponenten. Dazu kommt in dieser Aufgabe das
-[Datenblatt des Motortreibers](http://www.st.com/content/ccc/resource/technical/document/datasheet/59/d0/ce/41/56/bb/4b/10/DM00034699.pdf/files/DM00034699.pdf/jcr:content/translations/en.DM00034699.pdf).
+Varianten zu informieren. Direkt relevant für die Ansteuerung sind vor allem
+H-Brücken, bzw. Vierquadrantensteller. Diese elektrischen Schaltungen erlauben
+die Drehrichtungsänderung und die Geschwindigkeitssteuerung der Motoren.
 
 **Elektromotoren:**
 
@@ -585,16 +578,38 @@ verbauten Komponenten. Dazu kommt in dieser Aufgabe das
     height: 315px;
   -->
 
-**Pulsweitenmodulation:**
 
-* [Wikipedia](https://en.wikipedia.org/wiki/Pulse-width_modulation)
-* [Mikrocontroller.net](https://www.mikrocontroller.net/articles/Pulsweitenmodulation)
-* [Motoransteuerung mit PWM](https://www.mikrocontroller.net/articles/Motoransteuerung_mit_PWM)
+                             --{{1}}--
+Neben den Hardware-Komponenten, ist auch die Theorie zur Ansteuerung der Motoren
+von Bedeutung. Zentral ist hier die Pulsweitenmodulation, sowie ihre Generierung
+mit Hilfe von Timern/Countern.
 
-**Timer:**
 
-* [Tutorial](https://www.mikrocontroller.net/articles/AVR-Tutorial:_Timer)
-* [Unterschied zwischen Timer und Counter](https://www.tutorialspoint.com/embedded_systems/es_timer_counter.htm)
+                               {{1}}
+********************************************************************************
+**Theorie:**
+
+* *Pulsweitenmodulation:*
+  * [Wikipedia](https://en.wikipedia.org/wiki/Pulse-width_modulation)
+  * [Mikrocontroller.net](https://www.mikrocontroller.net/articles/Pulsweitenmodulation)
+  * [Motoransteuerung mit PWM](https://www.mikrocontroller.net/articles/Motoransteuerung_mit_PWM)
+
+
+* *Timer:*
+  * [Tutorial](https://www.mikrocontroller.net/articles/AVR-Tutorial:_Timer)
+  * [Unterschied zwischen Timer und Counter](https://www.tutorialspoint.com/embedded_systems/es_timer_counter.htm)
+
+********************************************************************************
+
+
+                             --{{2}}--
+Wie immer findet ihr hier aber auch die spezifischen Datenblätter für die
+verbauten Komponenten. Dazu kommt in dieser Aufgabe das
+[Datenblatt des Motortreibers](http://www.st.com/content/ccc/resource/technical/document/datasheet/59/d0/ce/41/56/bb/4b/10/DM00034699.pdf/files/DM00034699.pdf/jcr:content/translations/en.DM00034699.pdf).
+
+
+                               {{2}}
+********************************************************************************
 
 **PKeS:**
 
@@ -602,32 +617,40 @@ verbauten Komponenten. Dazu kommt in dieser Aufgabe das
 * [Schaltbelegungsplan](https://github.com/liaScript/PKeS0/blob/master/materials/robubot_stud.pdf?raw=true)
 * [Arduinoview](https://github.com/fesselk/Arduinoview/blob/master/doc/Documetation.md)
 * [Datenblatt des AVR ATmega32U4](http://www.atmel.com/Images/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf)
+********************************************************************************
+
 
 # Aufgabe 2
 
 @init_clear
 
     --{{0}}--
-In der *zweiten* praktischen Aufgabe sollt ihr die Ansteuerung der Motoren
+In dieser *zweiten* praktischen Aufgabe sollt ihr die Ansteuerung der Motoren
 unserer Roboter-Plattform implementieren. Da es sich auch hier um eine einfache
 Treiberentwicklung handelt, geben wir euch, wie auch in der letzten Aufgabe, die
 Header-Datei `Motor.h` vor. Darin sind die zu implementierenden Funktionen
-deklariert.
+deklariert.Es bietet sich an die Funktionen in zwei verschiedenen Teilaufgaben
+zu implementieren.
 
     --{{1}}--
-Es bietet sich an die Funktionen in zwei verschiedenen Teilaufgaben zu
-implementieren.
-
-    --{{2}}--
 Da ihr in dieser Aufgabe mit den elektrischen Motoren Kräfte auf die Umgebung
-des Roboters ausüben könnt, muss zunächst die Funktionalität zum
+des Roboters ausübt, muss zunächst die Funktionalität zum
 **Deaktivieren der Motoren** implementiert werden. Erst danach solltet ihr die
 Aktivierung der Motoren implementieren. So soll es euch möglich sein die Motoren
 bei potenziell unsicherem Verhalten auszuschalten.
 
-    --{{3}}--
+    --{{2}}--
 In der zweiten Teilaufgabe wird es dann darum gehen, die eigentliche Bewegung zu
 generieren.
+
+
+**Teilaufgaben**
+
+* {{1}} Implementiert die Aktivierung/Deaktivierung der Motoren und die
+  zugehörigen Callback-Funktionen des Arduinoview-Interfaces.
+* {{2}} Implementiert die Geschwindigkeits- und Drehrichtungssteuerung für beide
+  Motoren.
+
 
 > **Hinweis:**
 >
@@ -635,14 +658,6 @@ generieren.
 > Arduino-Bibliothek. Lediglich die Funktionen der `Serial`-Klasse zur
 > Ansteuerung der seriellen Schnittstelle, sowie der Funktion `millis()` zur
 > einfachen Zeitmessung können genutzt werden.
-
-
-**Teilaufgaben**
-
-* *2.1* Implementiert die Aktivierung/Deaktivierung der Motoren und die
-  zugehörigen Callback-Funktionen des Arduinoview-Interfaces.
-* *2.2* Implementiert die Geschwindigkeits- und Drehrichtungssteuerung für beide
-  Motoren.
 
 ## Aufgabe 2.1
 
@@ -661,16 +676,15 @@ zu implementieren. Fügt dazu eurem Arduinoview-Interface einen *Start*-Button
 hinzu und verknüpft die Callback-Funktion mit der API-Funktion
 `activateMotors()`.
 
-**Ziel:**
 
-Implementiert die Funktionen `deactivateMotors()` und `activateMotors()` und
-verknüpft sie mit den entsprechenden Callback-Funktionen im
-Arduinoview-Interface.
+**Ziel:** Implementiert die Funktionen `deactivateMotors()` und
+`activateMotors()` und verknüpft sie mit den entsprechenden Callback-Funktionen
+im Arduinoview-Interface.
 
 **Teilschritte:**
 
-1. Legt eine `Motor.cpp`-Datei an und implementiert die Funktion
-   `deactivateMotors()`. Danach sollte eure Code-Vorlage kompilierfähig sein.
+1. Implementiert die Funktion `deactivateMotors()` in der Datei `Motor.cpp`.
+   Danach sollte eure Code-Vorlage kompilierfähig sein.
 2. Implementiert die Funktion `activateMotors()`.
 3. Fügt dem Arduinoview-Interface einen *Start*-Button hinzu und verknüpft ihn
    mit der Funktion `activateMotors()`.
@@ -687,55 +701,57 @@ generieren.
 
     --{{1}}--
 Im ersten Teilschritt solltet ihr, vorbereitend auf die Generierung der
-PWM-Signale, die Funktion `initMotors()` implementieren. Da zur Generierung
-eines PWM-Signals Timer genutzt werden sollen, muss auch deren Initialisierungen
+PWM-Signale, die Funktion `initMotors` implementieren. Da zur Generierung
+eines PWM-Signals Timer genutzt werden sollen, muss auch deren Initialisierung
 in dieser Funktion stattfinden. Achtet dabei darauf, dass die Frequenz der
 PWM-Signale außerhalb des hörbaren Bereichs (500 Hz - 15 kHz) liegt.
 
     --{{2}}--
 Im zweiten Teilschritt geht es darum, die Motoren zu bewegen. Dazu haben wir
-euch die Funktion `setMotors(int8_t left, int8_t right)` vorgegeben. Nutzt die
-Funktion um die generierten PWM-Signale entsprechend den Werten für den linken
-und rechten Motor anzupassen. Achtet dabei auch auf die Drehrichtung der
-Motoren.
+euch die Funktion `setMotors` vorgegeben. Nutzt die Funktion um die generierten
+PWM-Signale entsprechend den Werten für den linken und rechten Motor anzupassen.
+Achtet dabei auch auf die Drehrichtung der Motoren.
 
     --{{3}}--
 Zur Abnahme der Aufgabe sollen positive Werte von *left* und *right* zu einer
 Vorwärtsbewegung, negative Werte zu einer Rückwärtsbewegung des jeweiligen
 Motors/Rads führen (zur Orientierung: die 7-Segment-Anzeigen sind links, an der
-Vorderseite des Roboters sind die Infrarot-Sensoren angebracht).
-
-    --{{4}}--
-Zur Vorgabe von Geschwindigkeits- und Richtungswerten für beide Räder, haben wir
-eurem Arduinoview-Interface ein *Joystick* hinzugefügt. Durch Klicken und Ziehen
-des Cursors im blauen Quadrat könnt ihr die Vorgaben kontinuierlich ändern.
+Vorderseite des Roboters sind die Infrarot-Sensoren angebracht). Zur Vorgabe von
+Geschwindigkeits- und Richtungswerten für beide Räder, haben wir eurem
+Arduinoview-Interface ein *Joystick* hinzugefügt. Durch Klicken und Ziehen des
+Cursors im blauen Quadrat könnt ihr die Vorgaben kontinuierlich ändern.
 
 
 **Ziel:**
 Ansteuerung beider Motoren mittels PWM-Signale und Drehrichtungsvorgabe.
 
-**Hinweise zur PWM-Generierung:**
-
-1. Vermeidet Frequenzen im hörbaren Bereich, d.h. zwischen 500 Hz und 15 kHz.
-2. Wie viele Timer sind zur PWM-Generierung für **beide** Motoren notwendig?
-   Wie können wir die Zahl der genutzten Timer möglichst gering halten?
 
 **Teilschritte:**
 
-1. Implementiert die Funktion `initMotors()`. Achtet darauf, dass die sich für
-   das PWM-Signal ergebende Frequenz außerhalb des hörbaren Bereichs
-   (500 Hz - 15 kHz) liegt.
-2. Implementiert die Funktion `setMotors(int8_t left, int8_t right)`.
+* {{1}} Implementiert die Funktion `initMotors()`. Achtet darauf, dass die sich
+  für das PWM-Signal ergebende Frequenz außerhalb des hörbaren Bereichs
+  (500 Hz - 15 kHz) liegt.
+* {{2}} Implementiert die Funktion `setMotors(int8_t left, int8_t right)`.
 
-**Hinweis Browserunterschiede:**
 
-Der Mozilla Firefox und Chrome verhalten sich leider bei der Auswertung der
-Clickevents unterschiedlich des Steuerungs Sticks. Der große HTML Block sollte
-daher um die folgende Zeile vor dem SVG-Element eränzt werden.
+    {{1}}
+> **Hinweise zur PWM-Generierung:**
+>
+> Vermeidet Frequenzen im hörbaren Bereich, d.h. zwischen 500 Hz und 15 kHz.
+>
+> Wie viele Timer sind zur PWM-Generierung für **beide** Motoren notwendig?
+> Wie können wir die Zahl der genutzten Timer möglichst gering halten?
 
-`"<style>svg * { pointer-events: none; }</style>\n"`
+    {{2}}
+> **Hinweis Browserunterschiede:**
+>
+> Der Mozilla Firefox und Chrome verhalten sich leider bei der Auswertung der
+> Klickevents unterschiedlich des Steuerungs Sticks. Der große HTML Block sollte
+> daher um die folgende Zeile vor dem SVG-Element eränzt werden.
+>
+> `"<style>svg * { pointer-events: none; }</style>\n"`
 
-## Bonusaufgabe B.1
+## Bonusaufgabe
 
 @init_clear
 
@@ -757,6 +773,7 @@ Funktionalität zu limitieren.
 
 **Vorgehen:**
 Modifiziert die `loop()`-Funktion um Energie zu sparen.
+
 
 # **Programmierung**
 
@@ -1104,3 +1121,7 @@ für eine beliebigen Widerstandswert. Figure 11 fasst diese Aussage grafisch und
 erlaubt es für 10kOhm den zugehörigen Wert zu ermitteln.
 
 ********************************************************************************
+
+# Umfrage
+
+Todo
