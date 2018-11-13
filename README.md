@@ -955,6 +955,9 @@ void activateMotors();
     --{{0}}--
 Wie auch in der letzten Aufgabe haben wir noch ein paar kurze Fragen an euch.
 
+![quiz](https://www.mobygames.com/images/shots/l/873336-who-wants-to-be-a-millionaire-3rd-edition-dvd-player-screenshot.jpg)<!-- style="width: 100%" -->
+
+
 ## Pulsweitenmodulation
 
 @init_clear
