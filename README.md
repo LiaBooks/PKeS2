@@ -705,6 +705,8 @@ PWM-Signale, die Funktion `initMotors` implementieren. Da zur Generierung
 eines PWM-Signals Timer genutzt werden sollen, muss auch deren Initialisierung
 in dieser Funktion stattfinden. Achtet dabei darauf, dass die Frequenz der
 PWM-Signale außerhalb des hörbaren Bereichs (500 Hz - 15 kHz) liegt.
+**Bitte achtet darauf, dass ihr nicht Timer 1 benutzt, da dieser bereits
+intern verwendet wird**
 
     --{{2}}--
 Im zweiten Teilschritt geht es darum, die Motoren zu bewegen. Dazu haben wir
